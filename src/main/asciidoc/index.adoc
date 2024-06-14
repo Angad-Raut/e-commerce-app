@@ -1,0 +1,289 @@
+= E-Commerce App API Documentation
+Angad Raut<angadraut75@gmail.com>
+1.0.0, 03 January 2024
+:toc: left
+:sectnums:
+
+== Authentication API List
+
+There are two endpoints which are listed below.
+
+=== Login API
+
+include::{snippets}/authentication-controller-test/get_login_test/http-request.adoc[]
+
+include::{snippets}/authentication-controller-test/get_login_test/http-response.adoc[]
+
+=== Logout API
+
+include::{snippets}/authentication-controller-test/logout_test/http-request.adoc[]
+
+include::{snippets}/authentication-controller-test/logout_test/http-response.adoc[]
+
+== Customer API List
+
+There are six endpoints which are listed below.
+
+=== Register Customer
+
+include::{snippets}/customer-controller-integration-test/register_customer_test/http-request.adoc[]
+
+include::{snippets}/customer-controller-integration-test/register_customer_test/http-response.adoc[]
+
+=== Get Customer Details By Id
+
+include::{snippets}/customer-controller-integration-test/get_customer_details_by_id_test/http-request.adoc[]
+
+include::{snippets}/customer-controller-integration-test/get_customer_details_by_id_test/http-response.adoc[]
+
+=== Update Customer Status By Id
+
+include::{snippets}/customer-controller-integration-test/update_customer_status_test/http-request.adoc[]
+
+include::{snippets}/customer-controller-integration-test/update_customer_status_test/http-response.adoc[]
+
+=== Customer Drop Down
+
+include::{snippets}/customer-controller-integration-test/get_customer_drop_down_test/http-request.adoc[]
+
+include::{snippets}/customer-controller-integration-test/get_customer_drop_down_test/http-response.adoc[]
+
+=== Get All Customers
+
+include::{snippets}/customer-controller-integration-test/get_all_customers_test/http-request.adoc[]
+
+include::{snippets}/customer-controller-integration-test/get_all_customers_test/http-response.adoc[]
+
+=== Get All Enabled Customers
+
+include::{snippets}/customer-controller-integration-test/get_all_enabled_customers_test/http-request.adoc[]
+
+include::{snippets}/customer-controller-integration-test/get_all_enabled_customers_test/http-response.adoc[]
+
+
+== Product Category API List
+
+There are six endpoints which are listed below.
+
+=== Add Product Category
+
+include::{snippets}/product-category-controller-integration-test/create_category_test/http-request.adoc[]
+
+include::{snippets}/product-category-controller-integration-test/create_category_test/http-response.adoc[]
+
+=== Get Product Category By Id
+
+include::{snippets}/product-category-controller-integration-test/get_product_category_by_id_test/http-request.adoc[]
+
+include::{snippets}/product-category-controller-integration-test/get_product_category_by_id_test/http-response.adoc[]
+
+=== Product Category Drop Down
+
+include::{snippets}/product-category-controller-integration-test/get_product_category_drop_down_test/http-request.adoc[]
+
+include::{snippets}/product-category-controller-integration-test/get_product_category_drop_down_test/http-response.adoc[]
+
+=== Update Product Category Status
+
+include::{snippets}/product-category-controller-integration-test/update_category_status_test/http-request.adoc[]
+
+include::{snippets}/product-category-controller-integration-test/update_category_status_test/http-response.adoc[]
+
+=== Get All Product Categories
+
+include::{snippets}/product-category-controller-integration-test/get_all_categories_test/http-request.adoc[]
+
+include::{snippets}/product-category-controller-integration-test/get_all_categories_test/http-response.adoc[]
+
+=== Get All Enabled Product Categories
+
+include::{snippets}/product-category-controller-integration-test/get_all_enabled_categories_test/http-request.adoc[]
+
+include::{snippets}/product-category-controller-integration-test/get_all_enabled_categories_test/http-response.adoc[]
+
+
+== Product API List
+
+There are five endpoints which are listed below.
+
+=== Add Product
+
+include::{snippets}/product-controller-integration-test/add_product_test/http-request.adoc[]
+
+include::{snippets}/product-controller-integration-test/add_product_test/http-response.adoc[]
+
+=== Get Product By Id
+
+include::{snippets}/product-controller-integration-test/get_product_by_id_test/http-request.adoc[]
+
+include::{snippets}/product-controller-integration-test/get_product_by_id_test/http-response.adoc[]
+
+=== Update Product Status By Id
+
+include::{snippets}/product-controller-integration-test/update_product_status_test/http-request.adoc[]
+
+include::{snippets}/product-controller-integration-test/update_product_status_test/http-response.adoc[]
+
+=== Get All Products By Status
+
+include::{snippets}/product-controller-integration-test/get_all_products_by_status_test/http-request.adoc[]
+
+include::{snippets}/product-controller-integration-test/get_all_products_by_status_test/http-response.adoc[]
+
+=== Get All Verified Products By Category
+
+include::{snippets}/product-controller-integration-test/get_verified_products_by_category_test/http-request.adoc[]
+
+include::{snippets}/product-controller-integration-test/get_verified_products_by_category_test/http-response.adoc[]
+
+
+== Product Batch API List
+
+There are five endpoints which are listed below.
+
+=== Create Product Batch
+
+include::{snippets}/batch-controller-integration-test/add_batch_test/http-request.adoc[]
+
+include::{snippets}/batch-controller-integration-test/add_batch_test/http-response.adoc[]
+
+=== Get Product Batch Details By Id
+
+include::{snippets}/batch-controller-integration-test/get_batch_by_id_test/http-request.adoc[]
+
+include::{snippets}/batch-controller-integration-test/get_batch_by_id_test/http-response.adoc[]
+
+=== Product Batch Drop Down
+
+include::{snippets}/batch-controller-integration-test/get_batch_drop_down_test/http-request.adoc[]
+
+include::{snippets}/batch-controller-integration-test/get_batch_drop_down_test/http-response.adoc[]
+
+=== Update Product Batch Status
+
+include::{snippets}/batch-controller-integration-test/update_batch_status_by_id_test/http-request.adoc[]
+
+include::{snippets}/batch-controller-integration-test/update_batch_status_by_id_test/http-response.adoc[]
+
+=== Get All Product Batch List
+
+include::{snippets}/batch-controller-integration-test/get_all_batch_list_test/http-request.adoc[]
+
+include::{snippets}/batch-controller-integration-test/get_all_batch_list_test/http-response.adoc[]
+
+
+== Inventory Stock API List
+
+There are five endpoints which are listed below.
+
+=== Add Inventory Stock
+
+include::{snippets}/inventory-stock-controller-integration-test/add_stock_test/http-request.adoc[]
+
+include::{snippets}/inventory-stock-controller-integration-test/add_stock_test/http-response.adoc[]
+
+=== Get Inventory Stock By Id
+
+include::{snippets}/inventory-stock-controller-integration-test/get_stock_by_id_test/http-request.adoc[]
+
+include::{snippets}/inventory-stock-controller-integration-test/get_stock_by_id_test/http-response.adoc[]
+
+=== Update Inventory Stock By Id
+
+include::{snippets}/inventory-stock-controller-integration-test/update_stock_status_by_id_test/http-request.adoc[]
+
+include::{snippets}/inventory-stock-controller-integration-test/update_stock_status_by_id_test/http-response.adoc[]
+
+=== Inventory Stock Drop Down
+
+include::{snippets}/inventory-stock-controller-integration-test/stock_drop_down_test/http-request.adoc[]
+
+include::{snippets}/inventory-stock-controller-integration-test/stock_drop_down_test/http-response.adoc[]
+
+=== Get All Inventory Stock List
+
+include::{snippets}/inventory-stock-controller-integration-test/get_all_inventory_stock_test/http-request.adoc[]
+
+include::{snippets}/inventory-stock-controller-integration-test/get_all_inventory_stock_test/http-response.adoc[]
+
+
+== Order API List
+
+There are six endpoints which are listed below.
+
+=== Place Order API
+
+include::{snippets}/order-controller-integration-test/place_order_test/http-request.adoc[]
+
+include::{snippets}/order-controller-integration-test/place_order_test/http-response.adoc[]
+
+=== Fetch Order Details API
+
+include::{snippets}/order-controller-integration-test/get_order_details_by_id_test/http-request.adoc[]
+
+include::{snippets}/order-controller-integration-test/get_order_details_by_id_test/http-response.adoc[]
+
+=== Update Order Status API
+
+include::{snippets}/order-controller-integration-test/update_order_status_by_order_id_test/http-request.adoc[]
+
+include::{snippets}/order-controller-integration-test/update_order_status_by_order_id_test/http-response.adoc[]
+
+=== Customer Order History API
+
+include::{snippets}/order-controller-integration-test/get_customer_order_history_by_customer-id_test/http-request.adoc[]
+
+include::{snippets}/order-controller-integration-test/get_customer_order_history_by_customer-id_test/http-response.adoc[]
+
+=== All In-progress Orders API
+
+include::{snippets}/order-controller-integration-test/get_all_in_completed_orders_test/http-request.adoc[]
+
+include::{snippets}/order-controller-integration-test/get_all_in_completed_orders_test/http-response.adoc[]
+
+=== All Completed Orders API
+
+include::{snippets}/order-controller-integration-test/get_all_completed_orders_test/http-request.adoc[]
+
+include::{snippets}/order-controller-integration-test/get_all_completed_orders_test/http-response.adoc[]
+
+
+== Payment API List
+
+There are six endpoints which are listed below.
+
+=== Do Payment API
+
+include::{snippets}/payment-controller-integration-test/do_payment_test/http-request.adoc[]
+
+include::{snippets}/payment-controller-integration-test/do_payment_test/http-response.adoc[]
+
+=== Fetch Payment Details By PaymentId API
+
+include::{snippets}/payment-controller-integration-test/get_payment_details_by_payment_id_test/http-request.adoc[]
+
+include::{snippets}/payment-controller-integration-test/get_payment_details_by_payment_id_test/http-response.adoc[]
+
+=== Fetch Payment Details By OrderId API
+
+include::{snippets}/payment-controller-integration-test/get_payment_details_by_order_id_test/http-request.adoc[]
+
+include::{snippets}/payment-controller-integration-test/get_payment_details_by_order_id_test/http-response.adoc[]
+
+=== Update Payment Status API
+
+include::{snippets}/payment-controller-integration-test/update_payment_status_test/http-request.adoc[]
+
+include::{snippets}/payment-controller-integration-test/update_payment_status_test/http-response.adoc[]
+
+=== Fetch Payment History By PaymentId API
+
+include::{snippets}/payment-controller-integration-test/get_payment_history_by_payment_id_test/http-request.adoc[]
+
+include::{snippets}/payment-controller-integration-test/get_payment_history_by_payment_id_test/http-response.adoc[]
+
+=== Fetch Payment History By OrderId API
+
+include::{snippets}/payment-controller-integration-test/get_payment_history_by_order_id_test/http-request.adoc[]
+
+include::{snippets}/payment-controller-integration-test/get_payment_history_by_order_id_test/http-response.adoc[]
