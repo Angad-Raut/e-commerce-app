@@ -12,7 +12,7 @@ jpa:
       jdbc:
         lob:
           non_contextual_creation: true
-  database-platform: org.hibernate.dialect.PostgreSQLDialect
+      dialect: org.hibernate.dialect.PostgreSQLDialect
   generate-ddl: true
   show-sql: true
   hibernate:
