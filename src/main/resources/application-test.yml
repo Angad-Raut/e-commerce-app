@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/e-commerce-test-db
+    username: {POSTGRES_USER}
+    password: {POSTGRES_PASSWORD}
+    hikari:
+      initialization-fail-timeout: 0
+jpa:
+  properties:
+    hibernate:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+  generate-ddl: true
+  show-sql: true
+  hibernate:
+    ddl-auto: update

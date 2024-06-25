@@ -100,5 +100,6 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<finalName>e-commerce-app</finalName>
 	</build>
 </project>

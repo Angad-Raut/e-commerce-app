@@ -1,0 +1,57 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: e-commerce-app
+  labels:
+    name: e-commerce-app
+spec:
+  ports:
+    - nodePort: 30163
+      port: 8082
+      targetPort: 8082
+      protocol: TCP
+  selector:
+    app: e-commerce-app
+  type: NodePort
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: e-commerce-app
+spec:
+  selector:
+    matchLabels:
+      app: e-commerce-app
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: e-commerce-app
+    spec:
+      containers:
+        - name: e-commerce-app
+          image: 9766945760/e-commerce-app:latest
+          ports:
+            - containerPort: 8082
+          env:   # Setting Enviornmental Variables
+            - name: DB_HOST   # Setting Database host address from configMap
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-conf  # name of configMap
+                  key: host
+            - name: DB_NAME  # Setting Database name from configMap
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-conf
+                  key: name
+            - name: POSTGRES_USER  # Setting Database username from Secret
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials # Secret Name
+                  key: postgres_user
+            - name: POSTGRES_PASSWORD # Setting Database password from Secret
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: postgres_password
