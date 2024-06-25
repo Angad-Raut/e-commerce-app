@@ -4,4 +4,4 @@ metadata:
   name: postgres-conf
 data:
   host: postgres
-  name: e-commerce-db
+  name: ecommerceDb
